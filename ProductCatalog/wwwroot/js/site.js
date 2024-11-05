@@ -12,9 +12,17 @@
 
     document.querySelectorAll('.product-card p:nth-child(4)').forEach(function (element) {
 
-        let price = parseFloat(element.textContent.replace('Price: ', '').replace(' €', ''));
+        // Hae hintateksti ja poista ylimääräiset merkit
+        let priceText = element.textContent.replace('Price: ', '').replace(' €', '');
 
-        element.textContent = `Price: ${price.toFixed(2).replace('.', ',')} €`;
+        // Käännä teksti luvuksi. Käytä pilkun sijaan pistettä.
+        let price = parseFloat(priceText.replace(',', '.'));
+
+        if (!isNaN(price)) {
+            element.textContent = `Price: ${price.toFixed(2).replace('.', ',')} €`;
+        } else {
+            console.error("Price parsing failed:", priceText);
+        }
 
     });
 
