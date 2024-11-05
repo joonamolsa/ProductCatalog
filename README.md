@@ -1,4 +1,4 @@
-Product Catalog - ASP.NET Core MVC Project
+#Product Catalog - ASP.NET Core MVC Project
 Projektin kuvaus:
 Tämä projekti on yksinkertainen tuotekatalogi, joka näyttää tuotteet käyttäjälle. Projektissa käytetään ASP.NET Core MVC:tä, ja tuotteet luetaan JSON-tiedostosta, 
 josta ne deserialisoidaan ja lähetetään näkymään. Projekti hyödyntää myös NuGet-pakettia Newtonsoft.Json JSON-tiedon käsittelyyn.
