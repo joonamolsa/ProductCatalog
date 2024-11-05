@@ -18,7 +18,7 @@ Tämä tiedosto luetaan ja deserialisoidaan GetProducts()-metodissa, ja sen tied
 
 4.  Views/Home/Product.cshtml
 Tämä Razor-näkymä esittää tuotetiedot käyttäjälle luomalla tuotekortit jokaiselle tuotteelle.
-Näkymä käyttää @model IEnumerable<WebApplication2.Models.Product> -määrittelyä, mikä tarkoittaa, että se vastaanottaa listan Product-olioita HomeControllerista ja renderöi ne HTML-sisällöksi käyttäen Razor-syntaksia.
+Näkymä käyttää @model IEnumerable<ProductCatalog.Models.Product> -määrittelyä, mikä tarkoittaa, että se vastaanottaa listan Product-olioita HomeControllerista ja renderöi ne HTML-sisällöksi käyttäen Razor-syntaksia.
 
 5.  Views/Shared/_Layout.cshtml
 Sivupohja, joka sisältää navigointipalkin (<navbar>), on päivitetty sisältämään linkin tuotekatalogiin. Navigointipalkissa on linkki, joka osoittaa Product-sivulle (HomeControllerin Product-metodiin).
